@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Pretendard 폰트 가져오기 */
+@import "pretendardFont.css";
+
+/*!**/
+/*GENERAL STYLING*/
+/*===============================*!*/
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+/*body {*/
+/*    font-family: "pretendard", sans-serif;*/
+/*}*/
+/*!* Layout *!*/
+/*#wrap {*/
+/*    min-width: 1280px;*/
+/*    width: 100%;*/
+/*    margin: 0 auto;*/
+/*    padding: 0;*/
+/*}*/
+
+/*
+GENERAL STYLING
+===============================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*
+DESKTOP SIZE
+===============================*/
+@media (min-width: 1280px) and (max-width: 1500px) {
+    body {
+        font-family: "pretendard", sans-serif;
+    }
+    /* Layout */
+    #wrap {
+        min-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
