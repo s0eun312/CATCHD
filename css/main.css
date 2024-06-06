@@ -740,20 +740,22 @@ SERVICE
 }
 .dContents_text {
     width: 286px;
-    margin: 317px 0 0 815px; /*Figma: 264px 0 0 305px*/
+    margin-top: 317px;
+    /*margin: 317px 0 0 815px; !*Figma: 264px 0 0 305px*!*/
     position: absolute;
     top: 9204px;
-    right: 690px;
     color: #2B2B2B;
     font-family: "pretendard", sans-serif;
     /* slideInLeft effect */
     opacity: 0;
+    right: 490px;
     /*transform: translateX(1%); !*어색함*!*/
-    transition: all .8s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 .dContents_text.slideInLeft {
     opacity: 1;
-    margin-left: 515px;
+    right: 690px;
+    /*margin-left: 515px;*/
     /*transform: translateX(0); !*어색함*!*/
 }
 .dContents_text span {
