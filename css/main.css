@@ -46,10 +46,9 @@ MAIN
     text-align: center;
 }
 .mainApp_img {
-    /*position: absolute;*/
-    /*top: 235px;*/
+    position: absolute;
+    top: 235px;
     /*left: 410px;*/
-    margin-top: -150px;
     width: 805px;
     height: 837px;
     z-index: 5;
@@ -57,13 +56,12 @@ MAIN
     animation: marginUp 1.5s ease-in-out;
 }
 .mainImg_1 {
-    /*position: absolute;*/
-    /*top: 618px;*/
-    /*left: 310px;*/
-    margin-right: -300px;
+    position: absolute;
+    top: 618px;
+    left: 310px;
+    /*margin-right: -300px;*/
     width: 367px;
     height: 159px;
-    z-index: 3;
     /*keyframes*/
     opacity: 0;
     overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
@@ -74,14 +72,13 @@ MAIN
     animation: slide1 1.3s ease-in-out forwards;
 }
 .mainImg_2 {
-    /*position: absolute;*/
-    /*top: 710px;*/
-    /*left: 600px;*/
-    margin-top: 200px;
-    margin-left: -500px;
+    position: absolute;
+    top: 710px;
+    left: 580px;
+    /*margin-top: 200px;*/
+    /*margin-left: -500px;*/
     width: 528px;
     height: 190px;
-    z-index: 3;
     /*keyframes*/
     opacity: 0;
     overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
@@ -1250,13 +1247,13 @@ keyframes
         opacity: 0;
         width: 0;
         height: 190px;
-        left: 600px;
+        left: 580px;
     }
     to {
         opacity: 1;
         width: 528px;
         height: 190px;
-        left: 710px;
+        left: 690px;
     }
 }
 /*@keyframes slide1 {*/
