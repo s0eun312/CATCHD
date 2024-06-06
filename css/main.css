@@ -16,13 +16,20 @@
 MAIN
 =======================================================================================================*/
 #main {
-    background-image: url("../img/main/mainSection_bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    /*background-image: url("../img/main/mainSection_bg.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
     top: 122px;
-    width: auto;
     height: 968px;
     padding: 0 3rem;
+}
+.main_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -3;
 }
 #main #catchd_title {
     /*기본 설정*/
@@ -30,6 +37,7 @@ MAIN
     justify-content: center;
     align-items: center;
     text-align: center;
+    z-index: 1;
     /*디자인*/
     color: #fff;
     font-family: "montserrat", sans-serif;
@@ -47,46 +55,356 @@ MAIN
 }
 .mainApp_img {
     position: absolute;
-    top: 235px;
+    top: 245px;
     /*left: 410px;*/
-    width: 805px;
-    height: 837px;
+    width: 882.82px;
+    height: 711px;
     z-index: 5;
     /*keyframes*/
-    animation: marginUp 1.5s ease-in-out;
+    animation: marginUp 1.5s ease-in-out, float 3s ease-in-out infinite;
 }
-.mainImg_1 {
+/*.mainImg_1 {*/
+/*    position: absolute;*/
+/*    top: 618px;*/
+/*    left: 310px;*/
+/*    !*margin-right: -300px;*!*/
+/*    width: 367px;*/
+/*    height: 159px;*/
+/*    !*keyframes*!*/
+/*    opacity: 0;*/
+/*    overflow: hidden; !* 애니메이션 전 내용이 보이지 않도록 숨김 *!*/
+/*    !*animation: fadeIn 1.3s ease-in-out forwards,*!*/
+/*    !*    slide1 2s ease-in-out infinite;*!*/
+/*    !*animation: fadeIn 1.3s ease-in-out forwards,*!*/
+/*    !*    slide1 1.5s cubic-bezier(.34, .1, 1, 1) infinite;*!*/
+/*    animation: slide1 1.3s ease-in-out forwards;*/
+/*}*/
+/*.mainImg_2 {*/
+/*    position: absolute;*/
+/*    top: 710px;*/
+/*    left: 580px;*/
+/*    !*margin-top: 200px;*!*/
+/*    !*margin-left: -500px;*!*/
+/*    width: 528px;*/
+/*    height: 190px;*/
+/*    !*keyframes*!*/
+/*    opacity: 0;*/
+/*    overflow: hidden; !* 애니메이션 전 내용이 보이지 않도록 숨김 *!*/
+/*    !*animation: slide2 3s ease-in-out infinite;*!*/
+/*    !*animation: fadeIn 1.3s ease-in-out forwards,*!*/
+/*    !*    slide2 2s ease-in-out infinite;*!*/
+/*    animation: slide2 1.3s ease-in-out forwards;*/
+/*}*/
+
+/* particles
+======================================*/
+.left_particle {
     position: absolute;
-    top: 618px;
-    left: 310px;
-    /*margin-right: -300px;*/
-    width: 367px;
-    height: 159px;
-    /*keyframes*/
-    opacity: 0;
-    overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
-    /*animation: fadeIn 1.3s ease-in-out forwards,*/
-    /*    slide1 2s ease-in-out infinite;*/
-    /*animation: fadeIn 1.3s ease-in-out forwards,*/
-    /*    slide1 1.5s cubic-bezier(.34, .1, 1, 1) infinite;*/
-    animation: slide1 1.3s ease-in-out forwards;
 }
-.mainImg_2 {
+.particle1 {
     position: absolute;
-    top: 710px;
-    left: 580px;
-    /*margin-top: 200px;*/
-    /*margin-left: -500px;*/
-    width: 528px;
-    height: 190px;
-    /*keyframes*/
-    opacity: 0;
-    overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
-    /*animation: slide2 3s ease-in-out infinite;*/
-    /*animation: fadeIn 1.3s ease-in-out forwards,*/
-    /*    slide2 2s ease-in-out infinite;*/
-    animation: slide2 1.3s ease-in-out forwards;
+    width: 10px;
+    height: 2.5px;
+    border-radius: 22.3em;
+    margin-top: 90px;
+    margin-left: 450px;
+    border-right: 0px;
+    background: #59F3AFFF;
+    animation: anim5 1s ease-out infinite, fadeIn 3s ease-out forwards;
 }
+.particle1:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2.5px;
+    border-radius: 22.3em;
+    border-right: 0px;
+    background: #59F3AFFF;
+    transform: rotate(90deg);
+}
+.particle2 {
+    position: absolute;
+    width: 17px;
+    height: 7.5px;
+    border-radius: 22.3em;
+    margin-top: 20px;
+    margin-left: 470px;
+    border-right: 0px;
+    background: #7bb3ff;
+    animation: anim6 1.3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.particle2:before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 7.5px;
+    border-radius: 22.3em;
+    border-right: 0px;
+    background: #7bb3ff;
+    transform: rotate(90deg);
+}
+.particle3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 68px;
+    margin-left: 470px;
+    border-right: 0px;
+    background: #59f3af;
+    animation: anim4 1.4s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.wind1 {
+    position: absolute;
+    width: 90px;
+    height: 13px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 70px;
+    margin-left: 470px;
+    transform: rotate(180deg);
+    animation: anim7 2.3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.wind2 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 40px;
+    margin-left: 430px;
+    transform: rotate(180deg);
+    animation: anim8 2s linear infinite, fadeIn 2s ease-in-out forwards;
+}
+.wind3 {
+    position: absolute;
+    width: 60px;
+    height: 11px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 100px;
+    margin-left: 460px;
+    transform: rotate(180deg);
+    animation: anim9 2s linear infinite, fadeIn 2.3s ease-in-out forwards;
+}
+@keyframes anim4 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-130px, 0);
+    }
+}
+@keyframes anim5 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100px, 0) rotate(-180deg);
+    }
+}
+@keyframes anim6 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-150px, 0) rotate(180deg);
+    }
+}
+@keyframes anim7 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 90px;
+    }
+    100% {
+        transform: translate(-70px, 0);
+        width: 10px;
+    }
+}
+@keyframes anim8 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 70px;
+    }
+    100% {
+        transform: translate(-70px, 0);
+        width: 30px;
+    }
+}
+@keyframes anim9 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 60px;
+    }
+    100% {
+        transform: translate(-70px, 0);
+        width: 10px;
+    }
+}
+
+.right_particle {
+    position: absolute;
+}
+.particle4 {
+    position: absolute;
+    width: 10px;
+    height: 2.5px;
+    border-radius: 22.3em;
+    margin-top: 210px;
+    margin-left: 890px;
+    border-right: 0;
+    background: #FBA0DBFF;
+    animation: anim12 1s ease-out infinite, fadeIn 3s ease-out forwards;
+}
+.particle4:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2.5px;
+    border-radius: 22.3em;
+    border-right: 0px;
+    background: #FBA0DBFF;
+    transform: rotate(90deg);
+}
+.particle5 {
+    position: absolute;
+    width: 17px;
+    height: 7.5px;
+    border-radius: 22.3em;
+    margin-top: 140px;
+    margin-left: 910px;
+    border-right: 0px;
+    background: #7bb3ff;
+    animation: anim13 1.3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.particle5:before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 7.5px;
+    border-radius: 22.3em;
+    border-right: 0px;
+    background: #7bb3ff;
+    transform: rotate(90deg);
+}
+.particle6 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 188px;
+    margin-left: 910px;
+    border-right: 0px;
+    background: #fba0db;
+    animation: anim14 1.4s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.wind4 {
+    position: absolute;
+    width: 90px;
+    height: 13px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 190px;
+    margin-left: 910px;
+    transform: rotate(180deg);
+    animation: anim15 2.3s linear infinite, fadeIn 3s ease-in-out forwards;
+}
+.wind5 {
+    position: absolute;
+    width: 70px;
+    height: 10px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 160px;
+    margin-left: 870px;
+    transform: rotate(180deg);
+    animation: anim16 2s linear infinite, fadeIn 2s ease-in-out forwards;
+}
+.wind6 {
+    position: absolute;
+    width: 60px;
+    height: 11px;
+    background: #7bb3ff;
+    border-radius: 22.3em;
+    margin-top: 220px;
+    margin-left: 900px;
+    transform: rotate(180deg);
+    animation: anim17 2s linear infinite, fadeIn 2.3s ease-in-out forwards;
+}
+@keyframes anim12 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(130px, 0);
+    }
+}
+@keyframes anim13 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100px, 0) rotate(-180deg);
+    }
+}
+@keyframes anim14 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(150px, 0) rotate(180deg);
+    }
+}
+@keyframes anim15 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 90px;
+    }
+    100% {
+        transform: translate(70px, 0);
+        width: 10px;
+    }
+}
+@keyframes anim16 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 70px;
+    }
+    100% {
+        transform: translate(70px, 0);
+        width: 30px;
+    }
+}
+@keyframes anim17 {
+    0% {
+        transform: translate(0, 0);
+        width: 10px;
+    }
+    50% {
+        width: 60px;
+    }
+    100% {
+        transform: translate(70px, 0);
+        width: 10px;
+    }
+}
+/*=====================================================*/
+
 .topScroll {
     background: none;
     border: none;
@@ -1183,6 +1501,8 @@ DOWNLOAD
     display: flex;
     align-items: center;
     margin-top: 13px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
 .download_contents p {
@@ -1225,10 +1545,10 @@ keyframes
 /* 메인 이미지 위로 올라오는 효과 */
 @keyframes marginUp {
     from {
-        top: 370px;
+        top: 400px;
     }
     to {
-        top: 235px;
+        top: 245px;
     }
 }
 /* mainImg_1, 2 slide effect */
