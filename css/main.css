@@ -63,6 +63,7 @@ MAIN
     margin-right: -300px;
     width: 367px;
     height: 159px;
+    z-index: 3;
     /*keyframes*/
     opacity: 0;
     overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
@@ -80,6 +81,7 @@ MAIN
     margin-left: -500px;
     width: 528px;
     height: 190px;
+    z-index: 3;
     /*keyframes*/
     opacity: 0;
     overflow: hidden; /* 애니메이션 전 내용이 보이지 않도록 숨김 */
