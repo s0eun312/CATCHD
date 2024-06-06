@@ -260,6 +260,7 @@ PROJECT
     font-family: "pretendard", sans-serif;
     font-size: 17.89px;
     font-weight: 600; /*semi bold*/
+    line-height: 1.8rem;
 }
 .persona .persona_line {
     margin-top: 54px;
