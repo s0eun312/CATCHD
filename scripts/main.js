@@ -248,3 +248,10 @@ window.addEventListener('scroll', () => {
         coupon.classList.remove('slideInLeft');
     }
 });
+
+//Download 페이지 이동
+let download = document.querySelector('.download_button');
+
+download.addEventListener('click', () => {
+    window.location.href = "download.html";
+});
