@@ -251,16 +251,18 @@ MAIN
     }
 }
 
-.right_particle {
-    position: absolute;
-}
+/*.right_particle {*/
+/*    position: absolute;*/
+/*}*/
 .particle4 {
     position: absolute;
+    top: 610px;
+    right: 500px;
     width: 10px;
     height: 2.5px;
     border-radius: 22.3em;
-    margin-top: 210px;
-    margin-left: 890px;
+    /*margin-top: 210px;*/
+    /*margin-left: 890px;*/
     border-right: 0;
     background: #FBA0DBFF;
     animation: anim12 1s ease-out infinite, fadeIn 3s ease-out forwards;
@@ -277,11 +279,14 @@ MAIN
 }
 .particle5 {
     position: absolute;
+    top: 480px;
+    /*left: 910px;*/
+    right: 440px;
     width: 17px;
     height: 7.5px;
     border-radius: 22.3em;
-    margin-top: 140px;
-    margin-left: 910px;
+    /*margin-top: 140px;*/
+    /*margin-left: 910px;*/
     border-right: 0px;
     background: #7bb3ff;
     animation: anim13 1.3s linear infinite, fadeIn 3s ease-in-out forwards;
@@ -298,45 +303,53 @@ MAIN
 }
 .particle6 {
     position: absolute;
+    top: 570px;
+    right: 500px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin-top: 188px;
-    margin-left: 910px;
+    /*margin-top: 188px;*/
+    /*margin-left: 910px;*/
     border-right: 0px;
     background: #fba0db;
     animation: anim14 1.4s linear infinite, fadeIn 3s ease-in-out forwards;
 }
 .wind4 {
     position: absolute;
+    top: 530px;
+    right: 480px;
     width: 90px;
     height: 13px;
     background: #7bb3ff;
     border-radius: 22.3em;
-    margin-top: 190px;
-    margin-left: 910px;
+    /*margin-top: 190px;*/
+    /*margin-left: 910px;*/
     transform: rotate(180deg);
     animation: anim15 2.3s linear infinite, fadeIn 3s ease-in-out forwards;
 }
 .wind5 {
     position: absolute;
+    top: 555px;
+    right: 450px;
     width: 70px;
     height: 10px;
     background: #7bb3ff;
     border-radius: 22.3em;
-    margin-top: 160px;
-    margin-left: 870px;
+    /*margin-top: 160px;*/
+    /*margin-left: 870px;*/
     transform: rotate(180deg);
     animation: anim16 2s linear infinite, fadeIn 2s ease-in-out forwards;
 }
 .wind6 {
     position: absolute;
+    top: 590px;
+    right: 500px;
     width: 60px;
     height: 11px;
     background: #7bb3ff;
     border-radius: 22.3em;
-    margin-top: 220px;
-    margin-left: 900px;
+    /*margin-top: 220px;*/
+    /*margin-left: 900px;*/
     transform: rotate(180deg);
     animation: anim17 2s linear infinite, fadeIn 2.3s ease-in-out forwards;
 }
