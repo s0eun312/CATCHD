@@ -1182,6 +1182,7 @@ DOWNLOAD
     display: flex;
     align-items: center;
     margin-top: 13px;
+    cursor: pointer;
 }
 .download_contents p {
     color: #fff;
