@@ -257,7 +257,7 @@ MAIN
 .particle4 {
     position: absolute;
     top: 610px;
-    right: 600px;
+    right: 590px;
     width: 10px;
     height: 2.5px;
     border-radius: 22.3em;
@@ -281,7 +281,7 @@ MAIN
     position: absolute;
     top: 480px;
     /*left: 910px;*/
-    right: 540px;
+    right: 530px;
     width: 17px;
     height: 7.5px;
     border-radius: 22.3em;
@@ -304,7 +304,7 @@ MAIN
 .particle6 {
     position: absolute;
     top: 570px;
-    right: 600px;
+    right: 590px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -317,7 +317,7 @@ MAIN
 .wind4 {
     position: absolute;
     top: 530px;
-    right: 580px;
+    right: 570px;
     width: 90px;
     height: 13px;
     background: #7bb3ff;
@@ -330,7 +330,7 @@ MAIN
 .wind5 {
     position: absolute;
     top: 555px;
-    right: 550px;
+    right: 540px;
     width: 70px;
     height: 10px;
     background: #7bb3ff;
@@ -343,7 +343,7 @@ MAIN
 .wind6 {
     position: absolute;
     top: 590px;
-    right: 600px;
+    right: 590px;
     width: 60px;
     height: 11px;
     background: #7bb3ff;
